@@ -1,0 +1,1 @@
+"""OpenATLAS Pathfinder application package."""

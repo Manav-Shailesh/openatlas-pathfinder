@@ -1,0 +1,5 @@
+Our system uses GPT-4 as the core LLM, with a RAG pipeline backed by
+Pinecone as the vector database. We use Agent Memory to persist
+conversation history across sessions. Tool Calling is enabled for
+Gmail Integration and Slack Integration. The agent can autonomously
+decide which tool to call based on user intent.

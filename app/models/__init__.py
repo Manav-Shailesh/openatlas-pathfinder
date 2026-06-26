@@ -1,0 +1,1 @@
+"""Shared enums and lightweight models used across modules."""

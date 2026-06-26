@@ -1,0 +1,1 @@
+"""Document ingestion: extract text and detect AI components from uploads."""
