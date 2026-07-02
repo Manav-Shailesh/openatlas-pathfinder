@@ -1,0 +1,12 @@
+{
+  "LLM": ["AML.T0051", "AML.T0043"],
+  "RAG": ["AML.T0070", "AML.T0064", "AML.T0071"],
+  "Vector Database": ["AML.T0085.000", "AML.T0082"],
+  "Agent": ["AML.T0108", "AML.T0100", "AML.T0084"],
+  "Tool Calling": ["AML.T0053", "AML.T0086", "AML.T0110"],
+  "Memory": ["AML.T0080", "AML.T0080.000"],
+  "External API": ["AML.T0096", "AML.T0040"],
+  "Plugin": ["AML.T0104", "AML.T0099"],
+  "MCP": ["AML.T0010.005", "AML.T0098"],
+  "Knowledge Base": ["AML.T0085.000", "AML.T0064"]
+}

@@ -1,0 +1,1 @@
+"""ATLAS mapping: maps detected architecture components to MITRE ATLAS techniques."""
