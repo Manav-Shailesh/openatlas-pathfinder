@@ -26,7 +26,11 @@ class Settings:
 
     # --- File upload limits (used in Phase 2) ---
     MAX_UPLOAD_SIZE_MB: int = 20
-    ALLOWED_EXTENSIONS: tuple = (".pdf", ".txt", ".md")
+    ALLOWED_EXTENSIONS: tuple = (".pdf", ".txt", ".md",".png",".jpg",".jpeg")
+
+    # --- Google Gemini API (Phase 2.5: diagram understanding) ---
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
+    GEMINI_MODEL: str = "gemini-2.5-flash"  # free tier model
 
 
 settings = Settings()
