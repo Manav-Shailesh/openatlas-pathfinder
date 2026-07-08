@@ -10,7 +10,7 @@ import pandas as pd
 from app.ingestion.service import process_uploaded_file
 from app.config import settings
 
-st.set_page_config(page_title="Upload — OpenATLAS Pathfinder", page_icon="📤")
+st.set_page_config(page_title="Upload - OpenATLAS Pathfinder", page_icon="📤")
 
 st.title("📤 Upload Architecture Document")
 st.caption("Upload a PDF, TXT, or Markdown file describing your AI system architecture.")

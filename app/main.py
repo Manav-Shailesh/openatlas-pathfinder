@@ -30,7 +30,7 @@ with col2:
     if db_ok:
         st.success("MongoDB: Connected ✅")
     else:
-        st.error("MongoDB: Not reachable ❌ — check your MONGO_URI in .env")
+        st.error("MongoDB: Not reachable ❌ - check your MONGO_URI in .env")
 
 st.info(
     "Phase 1 complete: project structure, config, and database layer are in place.\n\n"
