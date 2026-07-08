@@ -40,7 +40,9 @@ def extract_from_markdown(file: Union[str, BinaryIO]) -> str:
 def extract_text(filename: str, file: Union[str, BinaryIO]) -> str:
     """
     Dispatches to the right extractor based on file extension.
-    Raises ValueError for unsupported types.
+    Image files are explicitly rejected here — they must go through
+    diagram_extractor.py via service.py, not through this function.
+    Raises ValueError for unsupported or misrouted types.
     """
     lower = filename.lower()
     if lower.endswith(".pdf"):
@@ -49,5 +51,13 @@ def extract_text(filename: str, file: Union[str, BinaryIO]) -> str:
         return extract_from_txt(file)
     elif lower.endswith(".md"):
         return extract_from_markdown(file)
+    elif lower.endswith((".png", ".jpg", ".jpeg")):
+        raise ValueError(
+            "Image files must be routed through diagram extraction, "
+            "not text extraction. This is a bug in service.py."
+        )
     else:
-        raise ValueError(f"Unsupported file type: {filename}")
+        raise ValueError(
+            f"Unsupported file type: '{filename}'. "
+            f"Supported: PDF, TXT, MD, PNG, JPG, JPEG"
+        )
