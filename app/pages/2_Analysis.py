@@ -83,7 +83,7 @@ with st.expander("View all mapped techniques", expanded=True):
             "Confidence": m.confidence,
         })
     df = pd.DataFrame(rows)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, hide_index=True)
 
 # ── Grouped by tactic ───────────────────────────────────────────────────────
 st.subheader("Techniques by ATLAS Tactic")

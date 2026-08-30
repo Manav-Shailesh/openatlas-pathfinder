@@ -40,9 +40,14 @@ def sample_attack_path():
 # ── Risk scoring tests ────────────────────────────────────────────────────────
 
 def test_formula_score_high():
-    score = _formula_score(8, 9, 7)
-    assert score == _formula_score(8, 9, 7)
+    # 9 × 9 × 8 = 648 / 10 = 64.8 → High
+    score = _formula_score(9, 9, 8)
     assert 61 <= score <= 100
+
+def test_formula_score_medium():
+    # 8 × 9 × 7 = 504 / 10 = 50.4 → Medium
+    score = _formula_score(8, 9, 7)
+    assert 31 <= score <= 60
 
 
 def test_formula_score_low():
