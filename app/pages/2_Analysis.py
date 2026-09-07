@@ -101,4 +101,3 @@ for tactic_name, techniques in sorted(grouped.items()):
 # ── Store for downstream phases ──────────────────────────────────────────────
 st.session_state["last_analysis_id"] = analysis_id
 st.session_state["last_mapped_techniques"] = [m.model_dump() for m in mapped]
-st.info("ATLAS mapping complete. Attack path generation comes in Phase 5.")

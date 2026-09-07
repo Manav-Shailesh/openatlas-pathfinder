@@ -141,4 +141,3 @@ for path in result.attack_paths:
 # ── Store for Phase 6 ────────────────────────────────────────────────────────
 st.session_state["last_analysis_id"] = analysis_id
 st.session_state["last_attack_path_record"] = result.model_dump()
-st.info("Attack paths saved. Risk dashboard and reporting come in Phase 6 & 7.")
